@@ -146,6 +146,9 @@
 
 - (void)setupButtons
 {
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+
+  
     if (self.doneButton == nil)
     {
         NSString *title = (self.picker.doneButtonTitle) ?
