@@ -177,6 +177,8 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
 
 - (void)setupButtons
 {
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+  
     if (self.navigationItem.rightBarButtonItem == nil)
     {
         NSString *title = (self.picker.doneButtonTitle) ?
